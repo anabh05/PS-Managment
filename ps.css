@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Imbue' serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3b7c0;
+    /* Fondo rosado similar al de la imagen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+
+.home {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.home h1 {
+    position: absolute;
+    font-size: 10em;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.home-h1-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    font-family: 'Imbue';
+    font-size: 2.3em;
+    color: rgb(255 209 227);
+}
+
+.home-h1-2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 3.1em;
+    color: rgb(255 209 227 / 34%);
+}
+
+.home-img {
+    width: 350px;
+    overflow: hidden;
+    z-index: 1;
+    margin: 0;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+nav {
+    display: flex;
+    position: absolute;
+    transform: translateY(474%);
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 222px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 106, 148);
+    font-size: 1em;
+}
+
