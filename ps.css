@@ -3,32 +3,40 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Imbue' serif;
+    
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #e3b7c0;
-    /* Fondo rosado similar al de la imagen */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+  
+ 
 }
 
 header {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    width: 100vh;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
 }
 
 
 
 .home {
+    display: flex;
+    height: 100vh;
     position: relative;
-    width: 100%;
-    max-width: 800px;
+    max-width: 1055px;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home h1 {
@@ -39,22 +47,26 @@ header {
 }
 
 .home-h1-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-family: 'Imbue';
-    font-size: 2.3em;
+    height: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        font-family: 'Imbue';
+        font-size: 2.3em;
     color: rgb(255 209 227);
 }
 
 .home-h1-2 {
+    font-family: Arial, sans-serif;
     text-align: center;
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     letter-spacing: 3.1em;
     color: rgb(255 209 227 / 34%);
+    height: 22%;
+    text-align: center;
 }
 
 .home-img {
@@ -75,8 +87,9 @@ header {
 nav {
     display: flex;
     position: absolute;
-    transform: translateY(474%);
+    font-family: Arial, sans-serif;
     justify-content: center;
+    transform: translateY(-100%);
 }
 
 nav ul {
@@ -85,7 +98,7 @@ nav ul {
     gap: 222px;
 }
 
-nav ul li a {
+nav ul li a {    
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
@@ -97,5 +110,132 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(255, 106, 148);
     font-size: 1em;
+}
+
+
+.about {
+    height: 100vh;
+    display: flex;
+    background-image: url('intro.png');
+        background-size: cover;
+        background-position: topS; 
+        background-repeat: no-repeat;
+        padding: 50px 50px;
+}
+
+.about-texts {
+    display: flex;
+    flex-direction: column;
+    width: 36%;
+    /* gap: 153px; */
+    justify-content: space-between;
+
+}
+
+.about-texts h1 {
+font-family: 'Imbue';
+    color: #F2A1C4;
+    font-weight: 300;
+    font-size: 400%;
+
+}
+
+.about-texts h2  {
+    font-weight: 500;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        color: rgb(255, 255, 255);
+        text-transform: uppercase;
+        font-size: 200%;
+}
+
+
+.about-texts-p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: medium;
+   
+}
+
+.servicios {
+width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(servicios.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 50px;
+    justify-content: space-between;
+
+}
+
+.servicios h1 {
+    font-family: 'Imbue';
+        color: #FBE1EC;
+        font-weight: 300;
+        font-size: 400%;
+
+}
+
+
+
+
+
+.info {
+    padding: 10px; /* Espacio interno */
+    background-color: #deb7c7; /* Color de fondo para la info */
+    margin: 5px 0; 
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+.servicios-list ul {
+    display: flex;
+        gap: 50px;
+        list-style: none;
+        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+   
+
+}
+
+.servicios-list li {
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    color: #f0f0f0;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+
+}
+
+.servicios-list li:hover {
+   color: #a56f86;
+}
+
+.info {
+    display: none;
+    padding: 10px;
+    background-color: #deb7c7;
+    margin: 5px 0;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    width: 100%;
+}
+
+
+.servicios-list li:hover .info {
+    display: block;
 }
 
